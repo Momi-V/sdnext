@@ -4,10 +4,10 @@
 # base image
 
 # rocm runtime (3gb)
-FROM rocm/dev-ubuntu-24.04:6.3.2
+FROM rocm/dev-ubuntu-24.04:6.4.4
 
 # rocm complete (32gb), required to build flash_atten
-#FROM rocm/dev-ubuntu-24.04:6.3.2-complete
+#FROM rocm/dev-ubuntu-24.04:6.4.4-complete
 
 # metadata
 LABEL org.opencontainers.image.vendor="SD.Next"
@@ -18,7 +18,7 @@ LABEL org.opencontainers.image.source="https://github.com/vladmandic/sdnext/"
 LABEL org.opencontainers.image.licenses="AGPL-3.0"
 LABEL org.opencontainers.image.title="SD.Next ROCm"
 LABEL org.opencontainers.image.description="SD.Next: Advanced Implementation of Stable Diffusion and other Diffusion-based generative image models"
-LABEL org.opencontainers.image.base.name="https://hub.docker.com/r/rocm/dev-ubuntu-24.04:6.3.2"
+LABEL org.opencontainers.image.base.name="https://hub.docker.com/r/rocm/dev-ubuntu-24.04:6.4.4"
 LABEL org.opencontainers.image.version="latest"
 
 # essentials
