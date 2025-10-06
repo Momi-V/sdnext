@@ -67,7 +67,7 @@ ENV venv_dir="/mnt/python/venv"
 #ENV HSA_OVERRIDE_GFX_VERSION=10.0.0
 
 # git clone and run sdnext
-RUN echo '#!/bin/bash\ngit status || git clone https://github.com/vladmandic/sdnext.git .\n/app/webui.sh "$@"' | tee /bin/startup.sh
+RUN echo '#!/bin/bash\ngit status || git clone https://github.com/Momi-V/sdnext.git .\n/app/webui.sh "$@"' | tee /bin/startup.sh
 RUN chmod 755 /bin/startup.sh
 
 # actually run sdnext
