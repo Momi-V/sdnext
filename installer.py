@@ -758,8 +758,8 @@ def install_rocm_zluda():
         else:
             if rocm.version is None or float(rocm.version) >= 6.4: # assume the latest if version check fails
                 # Torch 2.8 with ROCm has common segfaults, memory access violations and accuracy issues
-                #torch_command = os.environ.get('TORCH_COMMAND', 'torch==2.8.0+rocm6.4 torchvision==0.23.0+rocm6.4 --index-url https://download.pytorch.org/whl/rocm6.4')
-                torch_command = os.environ.get('TORCH_COMMAND', 'torch==2.7.1+rocm6.3 torchvision==0.22.1+rocm6.3 --index-url https://download.pytorch.org/whl/rocm6.3')
+                torch_command = os.environ.get('TORCH_COMMAND', 'torch==2.8.0+rocm6.4 torchvision==0.23.0+rocm6.4 --index-url https://download.pytorch.org/whl/rocm6.4')
+                #torch_command = os.environ.get('TORCH_COMMAND', 'torch==2.7.1+rocm6.3 torchvision==0.22.1+rocm6.3 --index-url https://download.pytorch.org/whl/rocm6.3')
             elif rocm.version == "6.3":
                 #torch_command = os.environ.get('TORCH_COMMAND', 'torch==2.8.0+rocm6.3 torchvision==0.23.0+rocm6.3 --index-url https://download.pytorch.org/whl/rocm6.3')
                 torch_command = os.environ.get('TORCH_COMMAND', 'torch==2.7.1+rocm6.3 torchvision==0.22.1+rocm6.3 --index-url https://download.pytorch.org/whl/rocm6.3')
