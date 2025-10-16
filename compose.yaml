@@ -12,3 +12,4 @@ services:
     devices:
       - /dev/dri
       - /dev/kfd
+    restart: unless-stopped
