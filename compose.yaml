@@ -1,0 +1,14 @@
+services:
+  sdnext-rocm:
+    container_name: sdnext-container
+    build:
+      context: ./configs
+      dockerfile: ./Dockerfile.rocm
+    volumes:
+      - ./data/data:/mnt/data
+      - ./data/models:/mnt/models
+    ports:
+      - 7860:7860
+    devices:
+      - /dev/dri
+      - /dev/kfd
